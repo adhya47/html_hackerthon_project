@@ -5,39 +5,37 @@
     <title>My HTML Showcase</title>
   </head>
 
-  <body
-    bgcolor="#f9f9f9"
-    text="#222"
-    link="#003366"
-    vlink="#555"
-    alink="#ff6600"
-  >
+  <body text="#222" link="#003366" vlink="#555" alink="#ff6600">
     <!-- Header -->
-    <table width="100%" bgcolor="#003366" cellpadding="15">
-      <tr>
-        <td align="center">
+    <div align="center">
+      <fieldset>
+        <legend>
           <h1>
-            <font color="white">&#127760; My HTML Showcase</font>
+            <font color="#003366">&#127760; My HTML Showcase</font>
           </h1>
-        </td>
-      </tr>
-    </table>
+        </legend>
+      </fieldset>
+    </div>
 
-    <!-- Layout with Sidebar + Content -->
-    <table width="100%" cellpadding="10" cellspacing="0">
-      <tr>
-        <!-- Sidebar -->
-        <td width="20%" valign="top" bgcolor="#e6f0ff">
-          <b>Navigation</b><br /><br />
-          <a href="first.html">&#127968; Home</a><br /><br />
-          <a href="about.html">&#128100; About</a><br /><br />
-          <a href="chapters.html">&#128194; Chapters</a><br /><br />
-          <a href="contact.html">&#9993; Contact</a><br />
-        </td>
+    <!-- Layout: Sidebar + Content -->
+    <div align="left">
+      <!-- Sidebar -->
+      <div align="left">
+        <fieldset>
+          <legend><b>Navigation</b></legend>
+          <p><a href="first.html">&#127968; Home</a></p>
+          <p><a href="about.html">&#128100; About</a></p>
+          <p><a href="chapters.html">&#128194; Chapters</a></p>
+          <p><a href="contact.html">&#9993; Contact</a></p>
+        </fieldset>
+      </div>
 
-        <!-- Main Content -->
-        <td width="80%" valign="top">
-          <h2>&#128640; Welcome to My HTML Journey</h2>
+      <!-- Main Content -->
+      <div align="left">
+        <fieldset>
+          <legend>
+            <h2>&#128640; Welcome to My HTML Journey</h2>
+          </legend>
           <p>
             This multipage website is my personal <b>HTML portfolio</b>, built
             without CSS or JavaScript — only clean HTML elements.
@@ -50,26 +48,46 @@
             <li>To prove creativity is possible even with just HTML</li>
           </ul>
 
-          <h3>&#9989; Quick Highlights</h3>
+          <h3>&#128196; Quick Highlights</h3>
           <ol>
             <li>Headings, text, and formatting</li>
             <li>Lists, tables, and forms</li>
             <li>Images, links, and multimedia</li>
             <li>Multi-page navigation</li>
           </ol>
-        </td>
-      </tr>
-    </table>
+
+          <h3>&#128218; Chapters Overview</h3>
+          <ul>
+            <li>
+              <a href="chapter1.html"
+                >&#128196; Chapter 1: Introduction to HTML</a
+              >
+            </li>
+            <li>
+              <a href="chapter2.html">&#128196; Chapter 2: Tables & Lists</a>
+            </li>
+            <li>
+              <a href="chapter3.html"
+                >&#128196; Chapter 3: HTML Structure & Elements</a
+              >
+            </li>
+            <li><a href="chapter4.html">&#128196; Chapter 4: Forms</a></li>
+            <li>
+              <a href="chapter5.html"
+                >&#128196; Chapter 5: Deploy Project & Multi-page Site</a
+              >
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <table width="100%" bgcolor="#003366" cellpadding="10">
-      <tr>
-        <td align="center">
-          <font color="white">
-            © 2025 My HTML Showcase | Made with &#128187; Pure HTML
-          </font>
-        </td>
-      </tr>
-    </table>
+    <div align="center">
+      <fieldset>
+        <legend>Footer</legend>
+        <p>© 2025 My HTML Showcase | Made with &#128187; Pure HTML</p>
+      </fieldset>
+    </div>
   </body>
 </html>

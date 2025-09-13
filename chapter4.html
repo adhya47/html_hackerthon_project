@@ -5,35 +5,34 @@
     <title>Chapter 4 - HTML Forms</title>
   </head>
 
-  <body
-    bgcolor="#ffffff"
-    text="#222"
-    link="#003366"
-    vlink="#555"
-    alink="#ff6600"
-  >
+  <body text="#222" link="#003366" vlink="#555" alink="#ff6600">
     <!-- Header -->
-    <table width="100%" bgcolor="#003366" cellpadding="15">
-      <tr>
-        <td align="center">
+    <div align="center">
+      <fieldset>
+        <legend>
           <h1>
-            <font color="white">&#128196; Chapter 4: HTML Forms</font>
+            <font color="#003366">&#128196; Chapter 4: HTML Forms</font>
           </h1>
-        </td>
-      </tr>
-    </table>
+        </legend>
+      </fieldset>
+    </div>
 
-    <table width="100%" cellpadding="10">
-      <tr>
-        <!-- Sidebar -->
-        <td width="20%" valign="top" bgcolor="#e6f0ff">
-          <b>Navigation</b><br /><br />
-          <a href="chapters.html">&#128218; Chapters</a><br /><br />
-          <a href="chapter4.html">&#128196; Chapter 4</a><br /><br />
-        </td>
+    <!-- Layout: Sidebar + Content -->
+    <div align="left">
+      <!-- Sidebar -->
+      <div align="left">
+        <fieldset>
+          <legend><b>Navigation</b></legend>
+          <p><a href="chapters.html">&#128218; Chapters</a></p>
+          <p><a href="chapter4.html">&#128196; Chapter 4</a></p>
+        </fieldset>
+      </div>
 
-        <!-- Main Content -->
-        <td width="80%" valign="top">
+      <!-- Main Content -->
+      <div align="left">
+        <fieldset>
+          <legend>Chapter 4 Content</legend>
+
           <!-- Form Basics -->
           <h3 id="form-basics">&#128196; Form Basics</h3>
           <p>
@@ -48,13 +47,11 @@
 
           <!-- Text Input -->
           <h3 id="text-input">&#128221; Text Input</h3>
-          <p>Basic text input for name or other text:</p>
           <pre>
 &lt;label&gt;Name:&lt;/label&gt;
 &lt;input type="text" name="name" placeholder="Enter your name"&gt;
         </pre
           >
-          <p>Example:</p>
           <form>
             Name:
             <input
@@ -71,7 +68,6 @@
 &lt;input type="email" name="email" placeholder="Enter your email"&gt;
         </pre
           >
-          <p>Example:</p>
           <form>
             Email:
             <input
@@ -88,12 +84,11 @@
 &lt;input type="password" name="password"&gt;
         </pre
           >
-          <p>Example:</p>
           <form>
             Password: <input type="password" name="password" /><br /><br />
           </form>
 
-          <!-- Checkbox Input -->
+          <!-- Checkbox -->
           <h3 id="checkbox">&#128504; Checkbox</h3>
           <pre>
 &lt;label&gt;Hobbies:&lt;/label&gt;&lt;br&gt;
@@ -102,7 +97,6 @@
 &lt;input type="checkbox" name="hobby" value="traveling"&gt; Traveling
         </pre
           >
-          <p>Example:</p>
           <form>
             Hobbies:<br />
             <input type="checkbox" name="hobby" value="reading" /> Reading<br />
@@ -120,7 +114,6 @@
 &lt;input type="radio" name="gender" value="other"&gt; Other
         </pre
           >
-          <p>Example:</p>
           <form>
             Gender:<br />
             <input type="radio" name="gender" value="male" /> Male<br />
@@ -139,7 +132,6 @@
 &lt;/select&gt;
         </pre
           >
-          <p>Example:</p>
           <form>
             Choose a fruit:
             <select name="fruits">
@@ -156,7 +148,6 @@
 &lt;textarea name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
         </pre
           >
-          <p>Example:</p>
           <form>
             Message:<br />
             <textarea name="message" rows="4" cols="50"></textarea><br /><br />
@@ -168,7 +159,6 @@
 &lt;input type="submit" value="Submit"&gt;
         </pre
           >
-          <p>Example:</p>
           <form>
             <input type="submit" value="Submit" />
           </form>
@@ -181,10 +171,9 @@
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            src="https://www.youtube.com/embed/NGYp1zCBthk"
             title="Chapter 4 HTML Forms Tutorial"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
 
@@ -193,17 +182,16 @@
             <a href="chapter3.html">&#8592; Previous Chapter</a> |
             <a href="chapter5.html">Next Chapter &#8594;</a>
           </p>
-        </td>
-      </tr>
-    </table>
+        </fieldset>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <table width="100%" bgcolor="#003366" cellpadding="10">
-      <tr>
-        <td align="center">
-          <font color="white">© 2025 My HTML Showcase | Chapter 4</font>
-        </td>
-      </tr>
-    </table>
+    <div align="center">
+      <fieldset>
+        <legend>Footer</legend>
+        <p>© 2025 My HTML Showcase | Chapter 4</p>
+      </fieldset>
+    </div>
   </body>
 </html>

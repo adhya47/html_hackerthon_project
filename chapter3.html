@@ -5,37 +5,36 @@
     <title>Chapter 3 - HTML Boilerplate & Divs</title>
   </head>
 
-  <body
-    bgcolor="#ffffff"
-    text="#222"
-    link="#003366"
-    vlink="#555"
-    alink="#ff6600"
-  >
+  <body text="#222" link="#003366" vlink="#555" alink="#ff6600">
     <!-- Header -->
-    <table width="100%" bgcolor="#003366" cellpadding="15">
-      <tr>
-        <td align="center">
+    <div align="center">
+      <fieldset>
+        <legend>
           <h1>
-            <font color="white"
+            <font color="#003366"
               >&#128196; Chapter 3: HTML Boilerplate & Divs</font
             >
           </h1>
-        </td>
-      </tr>
-    </table>
+        </legend>
+      </fieldset>
+    </div>
 
-    <table width="100%" cellpadding="10">
-      <tr>
-        <!-- Sidebar -->
-        <td width="20%" valign="top" bgcolor="#e6f0ff">
-          <b>Navigation</b><br /><br />
-          <a href="chapters.html">&#128218; Chapters</a><br /><br />
-          <a href="chapter3.html">&#128196; Chapter 3</a><br /><br />
-        </td>
+    <!-- Layout: Sidebar + Content -->
+    <div align="left">
+      <!-- Sidebar -->
+      <div align="left">
+        <fieldset>
+          <legend><b>Navigation</b></legend>
+          <p><a href="chapters.html">&#128218; Chapters</a></p>
+          <p><a href="chapter3.html">&#128196; Chapter 3</a></p>
+        </fieldset>
+      </div>
 
-        <!-- Main Content -->
-        <td width="80%" valign="top">
+      <!-- Main Content -->
+      <div align="left">
+        <fieldset>
+          <legend>Chapter 3 Content</legend>
+
           <!-- HTML Boilerplate -->
           <h3 id="boilerplate">&#128196; HTML Boilerplate</h3>
           <p>
@@ -114,18 +113,15 @@
         </pre
           >
 
-          <hr />
-
           <!-- Video at the end -->
           <h3>&#128250; Video Tutorial</h3>
           <p>Watch this video to understand everything in Chapter 3:</p>
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/k78lNSAB8VY?rel=0"
+            src="https://www.youtube.com/embed/k78lNSAB8VY"
             title="Chapter 3 HTML Tutorial"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
 
@@ -134,17 +130,16 @@
             <a href="chapter2.html">&#8592; Previous Chapter</a> |
             <a href="chapter4.html">Next Chapter &#8594;</a>
           </p>
-        </td>
-      </tr>
-    </table>
+        </fieldset>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <table width="100%" bgcolor="#003366" cellpadding="10">
-      <tr>
-        <td align="center">
-          <font color="white">© 2025 My HTML Showcase | Chapter 3</font>
-        </td>
-      </tr>
-    </table>
+    <div align="center">
+      <fieldset>
+        <legend>Footer</legend>
+        <p>© 2025 My HTML Showcase | Chapter 3</p>
+      </fieldset>
+    </div>
   </body>
 </html>

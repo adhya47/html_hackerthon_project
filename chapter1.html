@@ -5,35 +5,34 @@
     <title>Chapter 1 - HTML Basics</title>
   </head>
 
-  <body
-    bgcolor="#ffffff"
-    text="#222"
-    link="#003366"
-    vlink="#555"
-    alink="#ff6600"
-  >
+  <body text="#222" link="#003366" vlink="#555" alink="#ff6600">
     <!-- Header -->
-    <table width="100%" bgcolor="#003366" cellpadding="15">
-      <tr>
-        <td align="center">
+    <div align="center">
+      <fieldset>
+        <legend>
           <h1>
-            <font color="white">&#128221; Chapter 1: HTML Basics</font>
+            <font color="#003366">&#128221; Chapter 1: HTML Basics</font>
           </h1>
-        </td>
-      </tr>
-    </table>
+        </legend>
+      </fieldset>
+    </div>
 
-    <table width="100%" cellpadding="10">
-      <tr>
-        <!-- Sidebar -->
-        <td width="20%" valign="top" bgcolor="#e6f0ff">
-          <b>Navigation</b><br /><br />
-          <a href="chapters.html">&#128218; Chapters</a><br /><br />
-          <a href="chapter1.html">&#128221; HTML Basics</a><br /><br />
-        </td>
+    <!-- Layout: Sidebar + Content -->
+    <div align="left">
+      <!-- Sidebar -->
+      <div align="left">
+        <fieldset>
+          <legend><b>Navigation</b></legend>
+          <p><a href="chapters.html">&#128218; Chapters</a></p>
+          <p><a href="chapter1.html">&#128221; HTML Basics</a></p>
+        </fieldset>
+      </div>
 
-        <!-- Main Content -->
-        <td width="80%" valign="top">
+      <!-- Main Content -->
+      <div align="left">
+        <fieldset>
+          <legend>Chapter 1 Content</legend>
+
           <h2 id="what-is-html">&#128196; What is HTML?</h2>
           <p>
             HTML stands for <b>HyperText Markup Language</b>. It is used to
@@ -71,19 +70,15 @@
           <h2 id="image-element">&#128247; Image Element</h2>
           <pre>&lt;img src="image.jpg" alt="Description"&gt;</pre>
 
-          <hr />
-
           <!-- Video at the end -->
           <h3>&#128250; Video Tutorial</h3>
           <p>Watch this video to understand everything in Chapter 1:</p>
-
           <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/GkZN_-HMCJ8"
             title="Chapter 1 HTML Tutorial"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
 
@@ -92,17 +87,16 @@
             <a href="chapters.html">&#8592; Back to Chapters</a> |
             <a href="chapter2.html">Next Chapter &#8594;</a>
           </p>
-        </td>
-      </tr>
-    </table>
+        </fieldset>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <table width="100%" bgcolor="#003366" cellpadding="10">
-      <tr>
-        <td align="center">
-          <font color="white">© 2025 My HTML Showcase | Chapter 1</font>
-        </td>
-      </tr>
-    </table>
+    <div align="center">
+      <fieldset>
+        <legend>Footer</legend>
+        <p>© 2025 My HTML Showcase | Chapter 1</p>
+      </fieldset>
+    </div>
   </body>
 </html>

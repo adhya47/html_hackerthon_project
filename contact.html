@@ -5,37 +5,36 @@
     <title>Contact Me</title>
   </head>
 
-  <body
-    bgcolor="#ffffff"
-    text="#222"
-    link="#003366"
-    vlink="#555"
-    alink="#ff6600"
-  >
+  <body text="#222" link="#003366" vlink="#555" alink="#ff6600">
     <!-- Header -->
-    <table width="100%" bgcolor="#003366" cellpadding="15">
-      <tr>
-        <td align="center">
+    <div align="center">
+      <fieldset>
+        <legend>
           <h1>
-            <font color="white">&#128233; Contact Me</font>
+            <font color="#003366">&#128233; Contact Me</font>
           </h1>
-        </td>
-      </tr>
-    </table>
+        </legend>
+      </fieldset>
+    </div>
 
-    <table width="100%" cellpadding="10">
-      <tr>
-        <!-- Sidebar -->
-        <td width="20%" valign="top" bgcolor="#e6f0ff">
-          <b>Navigation</b><br /><br />
-          <a href="first.html">&#127968; Home</a><br /><br />
-          <a href="about.html">&#128100; About</a><br /><br />
-          <a href="chapters.html">&#128218; Chapters</a><br /><br />
-          <a href="contact.html">&#9993; Contact</a><br />
-        </td>
+    <!-- Layout: Sidebar + Content -->
+    <div align="left">
+      <!-- Sidebar -->
+      <div align="left">
+        <fieldset>
+          <legend><b>Navigation</b></legend>
+          <p><a href="first.html">&#127968; Home</a></p>
+          <p><a href="about.html">&#128100; About</a></p>
+          <p><a href="chapters.html">&#128218; Chapters</a></p>
+          <p><a href="contact.html">&#9993; Contact</a></p>
+        </fieldset>
+      </div>
 
-        <!-- Main Content -->
-        <td width="80%" valign="top">
+      <!-- Main Content -->
+      <div align="left">
+        <fieldset>
+          <legend>Contact Me</legend>
+
           <!-- Contact Form -->
           <h3>&#128233; Get in Touch</h3>
           <p>Fill out this form to send me a message:</p>
@@ -79,7 +78,9 @@
           <h3>&#128100; Other Ways to Reach Me</h3>
           <p>
             Email:
-            <a href="empty">adhyakhilosia13@gmail.com</a>
+            <a href="mailto:adhyakhilosia13@gmail.com"
+              >adhyakhilosia13@gmail.com</a
+            >
           </p>
           <p>
             LinkedIn:
@@ -99,20 +100,17 @@
           <hr />
 
           <!-- Navigation -->
-          <p>
-            <a href="index.html">&#8592; Back to Home</a>
-          </p>
-        </td>
-      </tr>
-    </table>
+          <p><a href="index.html">&#8592; Back to Home</a></p>
+        </fieldset>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <table width="100%" bgcolor="#003366" cellpadding="10">
-      <tr>
-        <td align="center">
-          <font color="white">© 2025 My HTML Showcase | Contact</font>
-        </td>
-      </tr>
-    </table>
+    <div align="center">
+      <fieldset>
+        <legend>Footer</legend>
+        <p>© 2025 My HTML Showcase | Contact</p>
+      </fieldset>
+    </div>
   </body>
 </html>
