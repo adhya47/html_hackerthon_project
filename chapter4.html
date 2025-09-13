@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chapter 4 - HTML Forms</title>
+  </head>
+
+  <body
+    bgcolor="#ffffff"
+    text="#222"
+    link="#003366"
+    vlink="#555"
+    alink="#ff6600"
+  >
+    <!-- Header -->
+    <table width="100%" bgcolor="#003366" cellpadding="15">
+      <tr>
+        <td align="center">
+          <h1>
+            <font color="white">&#128196; Chapter 4: HTML Forms</font>
+          </h1>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" cellpadding="10">
+      <tr>
+        <!-- Sidebar -->
+        <td width="20%" valign="top" bgcolor="#e6f0ff">
+          <b>Navigation</b><br /><br />
+          <a href="chapters.html">&#128218; Chapters</a><br /><br />
+          <a href="chapter4.html">&#128196; Chapter 4</a><br /><br />
+        </td>
+
+        <!-- Main Content -->
+        <td width="80%" valign="top">
+          <!-- Form Basics -->
+          <h3 id="form-basics">&#128196; Form Basics</h3>
+          <p>
+            The <code>&lt;form&gt;</code> element is used to collect user input:
+          </p>
+          <pre>
+&lt;form action="submit.php" method="post"&gt;
+  &lt;!-- form elements here --&gt;
+&lt;/form&gt;
+        </pre
+          >
+
+          <!-- Text Input -->
+          <h3 id="text-input">&#128221; Text Input</h3>
+          <p>Basic text input for name or other text:</p>
+          <pre>
+&lt;label&gt;Name:&lt;/label&gt;
+&lt;input type="text" name="name" placeholder="Enter your name"&gt;
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            Name:
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            /><br /><br />
+          </form>
+
+          <!-- Email Input -->
+          <h3 id="email-input">&#128231; Email Input</h3>
+          <pre>
+&lt;label&gt;Email:&lt;/label&gt;
+&lt;input type="email" name="email" placeholder="Enter your email"&gt;
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            Email:
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            /><br /><br />
+          </form>
+
+          <!-- Password Input -->
+          <h3 id="password-input">&#128274; Password Input</h3>
+          <pre>
+&lt;label&gt;Password:&lt;/label&gt;
+&lt;input type="password" name="password"&gt;
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            Password: <input type="password" name="password" /><br /><br />
+          </form>
+
+          <!-- Checkbox Input -->
+          <h3 id="checkbox">&#128504; Checkbox</h3>
+          <pre>
+&lt;label&gt;Hobbies:&lt;/label&gt;&lt;br&gt;
+&lt;input type="checkbox" name="hobby" value="reading"&gt; Reading &lt;br&gt;
+&lt;input type="checkbox" name="hobby" value="gaming"&gt; Gaming &lt;br&gt;
+&lt;input type="checkbox" name="hobby" value="traveling"&gt; Traveling
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            Hobbies:<br />
+            <input type="checkbox" name="hobby" value="reading" /> Reading<br />
+            <input type="checkbox" name="hobby" value="gaming" /> Gaming<br />
+            <input type="checkbox" name="hobby" value="traveling" />
+            Traveling<br /><br />
+          </form>
+
+          <!-- Radio Buttons -->
+          <h3 id="radio">&#128504; Radio Buttons</h3>
+          <pre>
+&lt;label&gt;Gender:&lt;/label&gt;&lt;br&gt;
+&lt;input type="radio" name="gender" value="male"&gt; Male &lt;br&gt;
+&lt;input type="radio" name="gender" value="female"&gt; Female &lt;br&gt;
+&lt;input type="radio" name="gender" value="other"&gt; Other
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            Gender:<br />
+            <input type="radio" name="gender" value="male" /> Male<br />
+            <input type="radio" name="gender" value="female" /> Female<br />
+            <input type="radio" name="gender" value="other" /> Other<br /><br />
+          </form>
+
+          <!-- Dropdown / Select -->
+          <h3 id="select">&#127818; Dropdown / Select</h3>
+          <pre>
+&lt;label&gt;Choose a fruit:&lt;/label&gt;
+&lt;select name="fruits"&gt;
+  &lt;option value="apple"&gt;Apple&lt;/option&gt;
+  &lt;option value="banana"&gt;Banana&lt;/option&gt;
+  &lt;option value="orange"&gt;Orange&lt;/option&gt;
+&lt;/select&gt;
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            Choose a fruit:
+            <select name="fruits">
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="orange">Orange</option></select
+            ><br /><br />
+          </form>
+
+          <!-- Textarea -->
+          <h3 id="textarea">&#128221; Textarea</h3>
+          <pre>
+&lt;label&gt;Message:&lt;/label&gt;
+&lt;textarea name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            Message:<br />
+            <textarea name="message" rows="4" cols="50"></textarea><br /><br />
+          </form>
+
+          <!-- Submit Button -->
+          <h3 id="submit">&#128190; Submit Button</h3>
+          <pre>
+&lt;input type="submit" value="Submit"&gt;
+        </pre
+          >
+          <p>Example:</p>
+          <form>
+            <input type="submit" value="Submit" />
+          </form>
+
+          <hr />
+
+          <!-- Video at the end -->
+          <h3>&#128250; Video Tutorial</h3>
+          <p>Watch this video to understand HTML forms:</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+            title="Chapter 4 HTML Forms Tutorial"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <!-- Navigation -->
+          <p>
+            <a href="chapter3.html">&#8592; Previous Chapter</a> |
+            <a href="chapter5.html">Next Chapter &#8594;</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Footer -->
+    <table width="100%" bgcolor="#003366" cellpadding="10">
+      <tr>
+        <td align="center">
+          <font color="white">© 2025 My HTML Showcase | Chapter 4</font>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

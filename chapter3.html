@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chapter 3 - HTML Boilerplate & Divs</title>
+  </head>
+
+  <body
+    bgcolor="#ffffff"
+    text="#222"
+    link="#003366"
+    vlink="#555"
+    alink="#ff6600"
+  >
+    <!-- Header -->
+    <table width="100%" bgcolor="#003366" cellpadding="15">
+      <tr>
+        <td align="center">
+          <h1>
+            <font color="white"
+              >&#128196; Chapter 3: HTML Boilerplate & Divs</font
+            >
+          </h1>
+        </td>
+      </tr>
+    </table>
+
+    <table width="100%" cellpadding="10">
+      <tr>
+        <!-- Sidebar -->
+        <td width="20%" valign="top" bgcolor="#e6f0ff">
+          <b>Navigation</b><br /><br />
+          <a href="chapters.html">&#128218; Chapters</a><br /><br />
+          <a href="chapter3.html">&#128196; Chapter 3</a><br /><br />
+        </td>
+
+        <!-- Main Content -->
+        <td width="80%" valign="top">
+          <!-- HTML Boilerplate -->
+          <h3 id="boilerplate">&#128196; HTML Boilerplate</h3>
+          <p>
+            The standard HTML boilerplate is the starting template for every
+            HTML page:
+          </p>
+          <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre
+          >
+
+          <!-- Div Tag -->
+          <h3 id="div-tag">&#128196; Div Tag</h3>
+          <p>
+            The <code>&lt;div&gt;</code> tag is a container element used to
+            group content.
+          </p>
+          <pre>
+&lt;div&gt;
+  &lt;h2&gt;Hello&lt;/h2&gt;
+  &lt;p&gt;This is a paragraph inside a div.&lt;/p&gt;
+&lt;/div&gt;
+        </pre
+          >
+
+          <!-- Classes & IDs -->
+          <h3 id="classes-ids">&#128196; Classes & IDs</h3>
+          <p>
+            Use <b>class</b> for multiple elements and <b>id</b> for a unique
+            element:
+          </p>
+          <pre>
+&lt;div class="box"&gt;This div has a class.&lt;/div&gt;
+
+&lt;div id="unique"&gt;This div has an id.&lt;/div&gt;
+        </pre
+          >
+
+          <!-- Inline Elements -->
+          <h3 id="inline-elements">&#128196; Inline Elements</h3>
+          <p>
+            Inline elements only occupy the space their content requires. Common
+            inline elements:
+          </p>
+          <ul>
+            <li><code>&lt;span&gt;</code> – Generic inline container</li>
+            <li><code>&lt;a&gt;</code> – Hyperlink</li>
+            <li><code>&lt;b&gt;</code> – Bold text</li>
+            <li><code>&lt;i&gt;</code> – Italic text</li>
+            <li><code>&lt;em&gt;</code> – Emphasized text</li>
+            <li><code>&lt;strong&gt;</code> – Important text</li>
+          </ul>
+          <pre>
+&lt;p&gt;This is a &lt;b&gt;bold&lt;/b&gt; and &lt;i&gt;italic&lt;/i&gt; text inside a paragraph.&lt;/p&gt;
+&lt;p&gt;Visit &lt;a href="https://example.com"&gt;Example Site&lt;/a&gt;&lt;/p&gt;
+&lt;span style="color:red"&gt;This text is red using span.&lt;/span&gt;
+        </pre
+          >
+
+          <!-- File Path -->
+          <h3 id="file-path">&#128196; File Path / Linking Files</h3>
+          <p>HTML uses paths to link CSS, JS, or images:</p>
+          <pre>
+&lt;link rel="stylesheet" href="css/styles.css"&gt;
+&lt;script src="js/script.js"&gt;&lt;/script&gt;
+&lt;img src="images/pic.jpg" alt="Image"&gt;
+        </pre
+          >
+
+          <hr />
+
+          <!-- Video at the end -->
+          <h3>&#128250; Video Tutorial</h3>
+          <p>Watch this video to understand everything in Chapter 3:</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/k78lNSAB8VY?rel=0"
+            title="Chapter 3 HTML Tutorial"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <!-- Navigation -->
+          <p>
+            <a href="chapter2.html">&#8592; Previous Chapter</a> |
+            <a href="chapter4.html">Next Chapter &#8594;</a>
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <!-- Footer -->
+    <table width="100%" bgcolor="#003366" cellpadding="10">
+      <tr>
+        <td align="center">
+          <font color="white">© 2025 My HTML Showcase | Chapter 3</font>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
